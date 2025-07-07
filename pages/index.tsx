@@ -7,11 +7,15 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 overflow-hidden bg-gradient-to-br from-[#0f0f0f] to-[#1a1a1a]">
-     
-
-        {/* Gradient Background Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-800/10 via-black to-black pointer-events-none z-0" />
+      <main
+        className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/bg.jpg')", // Ensure you have a background image in the public folder
+          backgroundSize: 'cover',
+        }}
+      >
+        {/* Optional: Black overlay for readability */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
 
         {/* Title */}
         <motion.h1
@@ -34,12 +38,12 @@ export default function Home() {
           purpose.
         </motion.p>
 
-        {/* Button */}
+        {/* Button Links */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.4, duration: 0.8 }}
-          className="mt-10 z-10"
+          className="mt-10 z-10 space-y-4"
         >
           <Link href="/services" passHref legacyBehavior>
             <a className="bg-gold text-black px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-yellow-400/60 hover:scale-105 transition transform">
@@ -58,7 +62,6 @@ export default function Home() {
               Learn More
             </a>
           </Link>
-          
           <br />
           <Link href="/team" passHref legacyBehavior>
             <a className="bg-gold text-black px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-yellow-400/60 hover:scale-105 transition transform">
