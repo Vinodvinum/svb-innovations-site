@@ -46,6 +46,25 @@ export default function Home() {
               Explore Our Solutions
             </a>
           </Link>
+          <br />
+          <Link href="/contact" passHref legacyBehavior>
+            <a className="bg-gold text-black px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-yellow-400/60 hover:scale-105 transition transform">
+              Contact Us
+            </a>
+          </Link>
+          <br />
+          <Link href="/about" passHref legacyBehavior>
+            <a className="bg-gold text-black px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-yellow-400/60 hover:scale-105 transition transform">
+              Learn More
+            </a>
+          </Link>
+          
+          <br />
+          <Link href="/team" passHref legacyBehavior>
+            <a className="bg-gold text-black px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-yellow-400/60 hover:scale-105 transition transform">
+              View Our Team
+            </a>
+          </Link>
         </motion.div>
       </main>
       <Footer />
