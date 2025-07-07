@@ -24,17 +24,8 @@ export default function Header() {
         {/* Logo + Brand */}
         <Link href="/" passHref legacyBehavior>
           <a className="flex items-center space-x-3 group hover:opacity-90 transition duration-300">
-            <div className="relative w-9 h-9">
-              <motion.img
-                src="public/SVB_Innovation_Logo.png" // Replace with your logo path
-                alt="SVB Innovations Logo"
-                initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+           
 
-                className="h-10 w-auto object-contain drop-shadow-[0_0_10px_#FFD700]"
-                transition={{ duration: 0.5, ease: 'easeInOut' }}                
-              />
-            </div>
             <span className="text-gold font-orbitron text-xl tracking-wide glow-text">
               SVB Innovations
             </span>

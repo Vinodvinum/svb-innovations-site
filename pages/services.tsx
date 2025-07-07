@@ -29,7 +29,7 @@ export default function Services() {
   return (
     <div>
       <Header />
-      <main className="relative min-h-screen px-6 py-16 max-w-6xl mx-auto text-gray-300 overflow-hidden">
+      <main className="relative min-h-screen px-6 py-16 max-w-5xl mx-auto text-gray-300 overflow-hidden" style={{backgroundImage  : 'url(/bg.png)', backgroundSize: 'cover'}}>
         {/* Background Layer */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-800/10 via-black to-black z-0 pointer-events-none" />
 
