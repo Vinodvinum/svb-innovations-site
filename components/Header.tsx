@@ -2,6 +2,9 @@
 import Link from 'next/link';
 import React from 'react';
 import { useState } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { motion } from 'framer-motion';
+
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
